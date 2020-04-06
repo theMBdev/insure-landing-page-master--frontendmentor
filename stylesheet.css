@@ -38,8 +38,17 @@ ul {
 
 li {
     list-style-type: none;
+}i
 
+svg {
+    fill: #837D88;
 }
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 nav {    
 
@@ -90,6 +99,14 @@ button {
     color: white;
     padding: 10px 25px;
     text-transform: uppercase;    
+}
+
+button:hover {
+    background-color: white;
+    color: var(--dark-violet);
+    cursor: pointer;
+
+
 }
 
 .hero button {
@@ -168,6 +185,11 @@ ul {
 
 .social-container li {
     margin: 30px 8px;
+}
+
+.social-container li svg:hover {
+    fill: var(--very-dark-violet);
+    cursor: pointer;
 }
 
 .footer-top {
@@ -316,6 +338,9 @@ footer ul li {
     padding: 10px;
 }
 
+
+
+
 @media only screen and (min-width: 900px) {
 
     /*    nav*/
@@ -356,7 +381,7 @@ footer ul li {
         display: none;
     }
 
-    .img-cont {
+    .hero__img-container {
         order: 2;
         width: 40%;
         padding-right: 30px;
@@ -532,18 +557,4 @@ footer ul li {
         z-index: 1;
         position: relative;
     }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
 }
